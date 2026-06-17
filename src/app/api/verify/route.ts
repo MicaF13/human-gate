@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyCloudProof, type ISuccessResult } from "@worldcoin/idkit-core";
+import { verifyCloudProof } from "@worldcoin/idkit-core/backend";
+import { type ISuccessResult } from "@worldcoin/idkit-core";
 import { consumeNonce } from "@/lib/nonce-store";
 import { issueSession } from "@/lib/session";
 

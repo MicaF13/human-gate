@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f17;
+  --panel: #121826;
+  --ink: #e7ecf3;
+  --muted: #8b97a9;
+  --line: #233047;
+  --accent: #5b8cff;
+  --accent-press: #3f6fe6;
+  --ok: #2fd48a;
+  --warn: #ffb454;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respect reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
